@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+h1, p {
+    text-align: center;
+    font-weight: 600;
+}
+
+form {
+    max-width: 500px;
+    background-color: rgba(11, 27, 73, 0.562);
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 50px;
+    padding: 20px 40px;
+}
+
+label {
+    display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select{
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-family: inherit;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+input[type='checkbox']:hover,
+input[type='radio']:hover{
+    cursor: pointer;
+}
+
+textarea {
+    height: 150px;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-family: inherit;
+}
+
+.image {
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#member-label,
+#album-label,
+#comment-label {
+    font-size: 1.1rem;
+}
+
+#submit {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    height: 40px;
+    font-family: inherit;
+    background-color: teal;
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
