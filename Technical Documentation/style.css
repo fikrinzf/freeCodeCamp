@@ -1,0 +1,190 @@
+/* ===== Base ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+section {
+    padding: 50px;
+}
+
+/* ===== Navbar ===== */
+#navbar {
+    border: 1px solid;
+    width: 30%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(3, 5, 34);
+    color: white;
+}
+
+.nav-menu ul {
+    padding: 2rem;
+}
+
+.nav-menu li {
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 1px solid;
+}
+
+.nav-menu ul li a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-menu ul li a:hover {
+    color: rgb(156, 156, 156);
+}
+
+.nav-close,
+.nav-toggle {
+    display: none;
+}
+
+
+/* ===== Main Section ===== */
+#main-doc {
+    border: 1px solid ;
+    width: 70%;
+    float: right;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #d4d4d4;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+/* ===== Responsive ===== */
+/* Mobile */
+@media only screen and (max-width:560px){
+    /* Navbar */
+    #navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 3rem;
+        background-color: #333;
+    }
+    
+    #navbar header {
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        height: 100vh;
+        width: 60%;
+        top: 0;
+        right: -100%;
+        background-color: #333;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.363);
+        transition: linear, .5s;
+        z-index: 1;
+    }
+
+    .nav-menu ul {
+        padding: 50px 25px;
+    }
+
+    .nav-menu li {
+        list-style: none;
+        padding: 10px 0;
+        border-bottom: 2px solid grey;
+    }
+
+    .nav-menu ul li a {
+        font-size: 1.2rem;
+    }
+
+    .nav-close,
+    .nav-toggle {
+        display: block;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 25px;
+    }
+
+    .nav-close,
+    .nav-toggle i {
+        display: flex;
+    }
+
+    .nav-close {
+        position: absolute;
+        top: -0.5rem;
+        right: 0;
+    }
+
+    /* Main Section */
+    #main-doc {
+        border: 1px solid ;
+        width: 100%;
+        float: right;
+    }
+
+    section header {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    section #Introduction {
+        margin-top: 250px;
+    }
+
+    article ul {
+        padding: 0 50px;
+    }
+}
+
+/* JS DOM */
+.show-menu {
+    right: 0;
+}
+
+
+
+
+
+
+
