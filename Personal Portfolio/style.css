@@ -1,0 +1,185 @@
+/* Base */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 100px;
+    border: 1px solid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1rem;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* ===== Welcome Section ===== */
+#welcome-section {
+    height: 100vh;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+}
+
+.image img {
+    max-width: 50%;
+}
+
+
+/* ===== About ===== */
+#about {
+    background-color: teal;
+    color: white;
+}
+.about h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.thumbnail img {
+    max-width: 55%;
+}
+
+/* ===== Projects ===== */
+.projects h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    text-align: center;
+}
+
+.projects-thumbnail img {
+    max-width: 85%;
+}
+
+
+/* ===== Contact ===== */
+#contact {
+    background-color: teal;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.social-link {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-link a {
+    color: white;
+    font-size: 4rem;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+/* ===== Responsive ===== */
+@media only screen and (max-width:567px) {
+    section {
+        padding: 20px;
+    }
+    
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+
+    .welcome-section h1 {
+        margin-top: 50px;
+    }
+
+    .image img {
+        max-width: 85%;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        grid-template-columns: auto auto;
+    }
+
+    .thumbnail img {
+        max-width: 60%;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
